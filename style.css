@@ -304,7 +304,7 @@ a:hover {
     color: white;
 }
 
-/* ========== FOTO HERO - UKURAN PROPORSIONAL ========== */
+/* FOTO HERO */
 .hero-img {
     width: min(70%, 280px);
     max-width: 280px;
@@ -375,7 +375,7 @@ section { padding: 100px 0; }
 }
 .about-card { position: relative; }
 
-/* ========== FOTO ABOUT - UKURAN PROPORSIONAL ========== */
+/* FOTO ABOUT */
 .about-image {
     text-align: center;
 }
@@ -759,7 +759,7 @@ section { padding: 100px 0; }
     background: var(--primary-dark);
 }
 
-/* ========== RESPONSIVE ========== */
+/* ========== RESPONSIVE TABLET ========== */
 @media (max-width: 968px) {
     .hero .container, .about-content, .contact-content { grid-template-columns: 1fr; }
     .hero-title { font-size: 48px; }
@@ -784,404 +784,42 @@ section { padding: 100px 0; }
     .section-title { font-size: 32px; }
 }
 
-/* ========== UKURAN FOTO DI HP ========== */
+/* ========== RESPONSIVE HP ========== */
 @media (max-width: 576px) {
-    .stats-grid { grid-template-columns: 1fr; }
-    .projects-grid { grid-template-columns: 1fr; }
-    .hero-buttons { flex-direction: column; }
-    .btn { text-align: center; justify-content: center; }
-    body { cursor: auto; }
-    .custom-cursor, .custom-cursor-dot { display: none; }
-    .hero-title { font-size: 36px; }
-    .title-greeting { font-size: 22px; }
-    .hero-typing { font-size: 18px; }
-    .testimonial-form .form-row { grid-template-columns: 1fr; }
-    .section-title { font-size: 28px; }
-    
-    /* Ukuran foto lebih kecil di HP */
-    .hero-img {
-        width: 180px;
-        max-width: 180px;
-    }
-    
-    .about-image img {
-        width: 180px;
-        max-width: 180px;
-    }
-}
-
-/* ========== HP SANGAT KECIL ========== */
-@media (max-width: 400px) {
-    .hero-img {
-        width: 150px;
-        max-width: 150px;
-    }
-    
-    .about-image img {
-        width: 150px;
-        max-width: 150px;
-    }
-}
-@media (max-width: 576px) {
-    /* ========== PERBAIKAN TOTAL UNTUK HP ========== */
-    
-    /* Container lebih kecil */
     .container {
         padding: 0 16px;
     }
     
-    /* Hero section di HP */
+    /* Hero HP */
     .hero {
         padding: 100px 0 60px;
         min-height: auto;
     }
-    
     .hero .container {
-        grid-template-columns: 1fr;
         gap: 30px;
         text-align: center;
     }
-    
-    /* Urutan di HP: Teks dulu, baru foto */
-    .hero-content {
-        order: 1;
-    }
-    
-    .hero-image {
-        order: 2;
-    }
-    
-    /* Ukuran font hero di HP */
-    .hero-greeting {
-        font-size: 14px;
-    }
-    
-    .hero-name {
-        font-size: 28px;
-    }
-    
-    .hero-title {
-        font-size: 16px;
-    }
-    
-    .hero-desc {
-        font-size: 14px;
-        padding: 0 10px;
-    }
-    
-    /* Tombol di HP */
-    .hero-buttons {
-        flex-direction: column;
-        gap: 12px;
-        align-items: center;
-    }
-    
-    .btn {
-        width: 80%;
-        justify-content: center;
-    }
-    
-    /* Sosial media di HP */
-    .hero-social {
-        justify-content: center;
-    }
-    
-    /* Foto hero di HP */
-    .hero-img {
-        width: 160px;
-        max-width: 160px;
-        margin: 0 auto;
-    }
-    
-    /* ========== ABOUT SECTION DI HP ========== */
-    .about {
-        padding: 60px 0;
-    }
-    
-    .about-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        text-align: center;
-    }
-    
-    /* Urutan di HP: Foto dulu, baru teks */
-    .about-left {
-        order: 1;
-    }
-    
-    .about-right {
-        order: 2;
-        text-align: center;
-    }
-    
-    /* Foto about di HP */
-    .about-image img {
-        width: 160px;
-        max-width: 160px;
-        margin: 0 auto;
-    }
-    
-    /* Badge pengalaman di HP */
-    .about-experience {
-        position: static;
-        margin-top: 15px;
-        display: inline-block;
-    }
-    
-    /* Judul about di HP */
-    .about-right h3 {
-        font-size: 22px;
-        text-align: center;
-    }
-    
-    /* Grid info about jadi 1 kolom */
-    .about-info-grid {
-        grid-template-columns: 1fr;
-        text-align: left;
-        max-width: 280px;
-        margin: 20px auto;
-    }
-    
-    .info-item {
-        justify-content: flex-start;
-    }
-    
-    /* ========== SKILLS SECTION DI HP ========== */
-    .skills, .projects, .testimonials, .contact {
-        padding: 60px 0;
-    }
-    
-    .section-title {
-        font-size: 28px;
-    }
-    
-    .section-subtitle {
-        font-size: 12px;
-    }
-    
-    /* Skills grid jadi 1 kolom */
-    .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .skill-card {
-        padding: 24px 20px;
-    }
-    
-    /* Projects grid jadi 1 kolom */
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    /* Testimonials grid */
-    .testimonials-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .testimonial-card {
-        padding: 20px;
-    }
-    
-    /* Form testimoni di HP */
-    .testimonial-form .form-row {
-        grid-template-columns: 1fr;
-    }
-    
-    .testimonial-form-container {
-        padding: 20px;
-    }
-    
-    /* ========== CONTACT SECTION DI HP ========== */
-    .contact-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    .contact-info {
-        gap: 16px;
-    }
-    
-    .contact-item {
-        justify-content: flex-start;
-    }
-    
-    .contact-form {
-        padding: 20px;
-    }
-    
-    /* ========== STATS DI HP ========== */
-    .stats {
-        padding: 50px 0;
-    }
-    
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-    
-    .stat-number {
-        font-size: 32px;
-    }
-    
-    .stat-label {
-        font-size: 12px;
-    }
-    
-    /* ========== FOOTER DI HP ========== */
-    .footer {
-        padding: 40px 0 20px;
-    }
-    
-    .footer-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 30px;
-    }
-    
-    .social-links {
-        justify-content: center;
-    }
-    
-    .footer-links ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    /* ========== UMUM ========== */
-    .section-line {
-        width: 40px;
-    }
-    
-    .section-header {
-        margin-bottom: 40px;
-    }
-    
-    .container {
-        padding: 0 16px;
-    }
-    
-    /* Hilangkan custom cursor di HP */
-    .custom-cursor, .custom-cursor-dot {
-        display: none;
-    }
-    
-    body {
-        cursor: auto;
-    }
-}
-@media (max-width: 576px) {
-    /* ========== PERBAIKAN TOTAL UNTUK HP ========== */
-    
-    .container {
-        padding: 0 16px;
-    }
-    
-    /* Hero section */
-    .hero {
-        padding: 100px 0 60px;
-        min-height: auto;
-    }
-    
-    .hero .container {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        text-align: center;
-    }
-    
-    .hero-content {
-        order: 1;
-    }
-    
-    .hero-image {
-        order: 2;
-    }
-    
-    .hero-greeting {
-        font-size: 14px;
-    }
-    
-    .hero-name {
-        font-size: 28px;
-    }
-    
-    .hero-title {
-        font-size: 16px;
-    }
-    
-    .hero-desc {
-        font-size: 14px;
-        padding: 0 10px;
-    }
-    
-    .hero-buttons {
-        flex-direction: column;
-        gap: 12px;
-        align-items: center;
-    }
-    
-    .btn {
-        width: 80%;
-        justify-content: center;
-    }
-    
-    .hero-social {
-        justify-content: center;
-    }
-    
-    .hero-img {
-        width: 160px;
-        max-width: 160px;
-        margin: 0 auto;
-    }
-    
-    /* ========== ABOUT SECTION DI HP ========== */
-    .about {
-        padding: 60px 0;
-    }
-    
-    .about-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        text-align: center;
-    }
-    
-    .about-left {
-        order: 1;
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-    }
-    
-    .about-right {
-        order: 2;
-        text-align: center;
-    }
-    
-    /* FOTO ABOUT - bikin container relatif */
-    .about-card {
-        display: inline-block;
-        position: relative;
-        margin: 0 auto;
-        width: auto;
-    }
-    
-    .about-image {
-        display: inline-block;
-    }
-    
-    .about-image img {
-        width: 160px;
-        max-width: 160px;
-        margin: 0 auto;
-        display: block;
-    }
-    
-    /* BADGE PENGALAMAN - NEMPEL KE FOTO (seperti di laptop) */
+    .hero-content { order: 1; }
+    .hero-image { order: 2; }
+    .hero-greeting { font-size: 14px; }
+    .hero-name { font-size: 28px; }
+    .hero-title { font-size: 16px; }
+    .hero-desc { font-size: 14px; padding: 0 10px; }
+    .hero-buttons { flex-direction: column; gap: 12px; align-items: center; }
+    .btn { width: 80%; justify-content: center; font-size: 14px; padding: 10px 20px; }
+    .hero-social { justify-content: center; }
+    .hero-img { width: 160px; max-width: 160px; }
+    
+    /* About HP */
+    .about { padding: 60px 0; }
+    .about-content { gap: 30px; text-align: center; }
+    .about-left { order: 1; position: relative; text-align: center; }
+    .about-right { order: 2; text-align: center; }
+    .about-card { display: inline-block; position: relative; margin: 0 auto; width: auto; }
+    .about-image { display: inline-block; }
+    .about-image img { width: 160px; max-width: 160px; }
+    
+    /* Badge Pengalaman - NEMPEL KE FOTO */
     .about-experience {
         position: absolute;
         bottom: -10px;
@@ -1193,137 +831,51 @@ section { padding: 100px 0; }
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         z-index: 10;
     }
+    .exp-number { font-size: 20px; }
+    .exp-text { font-size: 9px; }
     
-    .exp-number {
-        font-size: 20px;
-        font-weight: 800;
-        display: block;
-        line-height: 1.2;
-    }
+    .about-right h3 { font-size: 22px; margin-top: 20px; }
+    .about-right p { font-size: 14px; padding: 0 10px; }
     
-    .exp-text {
-        font-size: 9px;
-        display: block;
-    }
-    
-    /* Judul about */
-    .about-right h3 {
-        font-size: 22px;
-        text-align: center;
-        margin-top: 20px;
-    }
-    
-    /* ========== PERBAIKAN INFO GRID (Nama, Email, Lokasi, Status) ========== */
+    /* Info Grid - Nama, Email, Lokasi, Status */
     .about-info-grid {
-        display: grid;
         grid-template-columns: 1fr;
         gap: 12px;
-        text-align: left;
-        max-width: 100%;
         margin: 20px 0;
-        padding: 0;
     }
-    
     .info-item {
         display: flex;
         align-items: center;
         gap: 12px;
-        justify-content: flex-start;
-        width: 100%;
         background: rgba(255, 255, 255, 0.03);
         padding: 10px 12px;
         border-radius: 12px;
         border: 1px solid rgba(1, 138, 190, 0.15);
     }
-    
     .info-item i {
         width: 36px;
         height: 36px;
         min-width: 36px;
-        background: rgba(1, 138, 190, 0.15);
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--primary);
         font-size: 16px;
     }
+    .info-item strong { font-size: 11px; }
+    .info-item span { font-size: 13px; word-break: break-word; }
     
-    .info-item div {
-        flex: 1;
-        overflow: hidden;
-    }
+    /* Skills, Projects, Testimonials, Contact HP */
+    .skills, .projects, .testimonials, .contact { padding: 60px 0; }
+    .section-title { font-size: 28px; }
+    .section-subtitle { font-size: 12px; }
+    .section-header { margin-bottom: 40px; }
+    .section-line { width: 40px; }
+    .skills-grid, .projects-grid, .testimonials-slider { grid-template-columns: 1fr; gap: 20px; }
+    .skill-card { padding: 24px 20px; }
+    .testimonial-card { padding: 20px; }
+    .testimonial-form .form-row { grid-template-columns: 1fr; }
+    .testimonial-form-container { padding: 20px; }
     
-    .info-item strong {
-        display: block;
-        font-size: 11px;
-        color: var(--text-gray);
-        margin-bottom: 2px;
-    }
-    
-    .info-item span {
-        font-weight: 600;
-        color: var(--light);
-        font-size: 13px;
-        display: block;
-        word-break: break-word;
-        white-space: normal;
-    }
-    
-    /* ========== SKILLS SECTION ========== */
-    .skills, .projects, .testimonials, .contact {
-        padding: 60px 0;
-    }
-    
-    .section-title {
-        font-size: 28px;
-    }
-    
-    .section-subtitle {
-        font-size: 12px;
-    }
-    
-    .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .skill-card {
-        padding: 24px 20px;
-    }
-    
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .testimonials-slider {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .testimonial-card {
-        padding: 20px;
-    }
-    
-    .testimonial-form .form-row {
-        grid-template-columns: 1fr;
-    }
-    
-    .testimonial-form-container {
-        padding: 20px;
-    }
-    
-    /* ========== CONTACT SECTION ========== */
-    .contact-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    .contact-info {
-        gap: 16px;
-    }
-    
+    /* Contact HP */
+    .contact-content { grid-template-columns: 1fr; gap: 30px; }
+    .contact-info { gap: 16px; }
     .contact-item {
         display: flex;
         align-items: center;
@@ -1332,87 +884,30 @@ section { padding: 100px 0; }
         padding: 12px;
         border-radius: 12px;
     }
+    .contact-icon { width: 45px; height: 45px; min-width: 45px; }
+    .contact-icon i { font-size: 20px; }
+    .contact-item p { font-size: 13px; word-break: break-word; }
+    .contact-form { padding: 20px; }
     
-    .contact-icon {
-        width: 45px;
-        height: 45px;
-        min-width: 45px;
-        background: rgba(1, 138, 190, 0.1);
-        border-radius: 12px;
-    }
+    /* Stats HP */
+    .stats { padding: 50px 0; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .stat-number { font-size: 32px; }
+    .stat-label { font-size: 12px; }
     
-    .contact-icon i {
-        font-size: 20px;
-    }
+    /* Footer HP */
+    .footer { padding: 40px 0 20px; }
+    .footer-content { grid-template-columns: 1fr; text-align: center; gap: 30px; }
+    .social-links { justify-content: center; }
+    .footer-links ul { align-items: center; }
     
-    .contact-item div {
-        flex: 1;
-        overflow: hidden;
-    }
-    
-    .contact-item p {
-        font-size: 13px;
-        word-break: break-word;
-        white-space: normal;
-    }
-    
-    .contact-form {
-        padding: 20px;
-    }
-    
-    /* ========== STATS ========== */
-    .stats {
-        padding: 50px 0;
-    }
-    
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-    
-    .stat-number {
-        font-size: 32px;
-    }
-    
-    .stat-label {
-        font-size: 12px;
-    }
-    
-    /* ========== FOOTER ========== */
-    .footer {
-        padding: 40px 0 20px;
-    }
-    
-    .footer-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 30px;
-    }
-    
-    .social-links {
-        justify-content: center;
-    }
-    
-    .footer-links ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    /* ========== UMUM ========== */
-    .section-line {
-        width: 40px;
-    }
-    
-    .section-header {
-        margin-bottom: 40px;
-    }
-    
-    .custom-cursor, .custom-cursor-dot {
-        display: none;
-    }
-    
-    body {
-        cursor: auto;
-    }
+    /* Hilangkan custom cursor di HP */
+    .custom-cursor, .custom-cursor-dot { display: none; }
+    body { cursor: auto; }
+}
+
+/* ========== HP SANGAT KECIL ========== */
+@media (max-width: 400px) {
+    .hero-img { width: 150px; max-width: 150px; }
+    .about-image img { width: 150px; max-width: 150px; }
 }
